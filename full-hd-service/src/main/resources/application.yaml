@@ -1,18 +1,18 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
-    name: streammer-hd
+    name: streammer-full-hd
   servlet:
     multipart:
       max-file-size: 10024KB
       max-request-size: 10024KB
 
 video:
-  path: video-hd.mp4
+  path: video-fullhd.mp4
   size: 23866165
-  ext: video-hd.mp4
+  ext: video-fullhd.mp4
 
 s3:
   access-key: AKIAIOSFODNN7EXAMPLE

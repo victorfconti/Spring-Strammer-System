@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hd-service</module>
+        <module>full-hd-service</module>
     </modules>
 
 </project>
