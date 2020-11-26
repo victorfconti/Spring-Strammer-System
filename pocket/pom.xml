@@ -17,7 +17,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<spring.application.name>${artifactId}</spring.application.name>
-		<spring.application.port>8084</spring.application.port>
+		<spring.application.port>8083</spring.application.port>
 		<fabric8.maven.plugin.version>3.5.38</fabric8.maven.plugin.version>
 		<fabric8.helm.chart>${artifactId}</fabric8.helm.chart>
 	</properties>
