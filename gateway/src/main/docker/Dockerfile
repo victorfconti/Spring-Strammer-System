@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-alpine
+FROM openjdk:11-jdk
 COPY maven /opt/app/
 WORKDIR /opt/app
 ENTRYPOINT java -jar ./app.jar
