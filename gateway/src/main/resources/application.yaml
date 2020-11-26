@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: fullhd
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/fullhd/**
+          filters:
+            - RewritePath=/api/fullhd/(?<segment>.*), /$\{segment}
+        - id: hd
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/hd/**
+          filters:
+            - RewritePath=/api/hd/(?<segment>.*), /$\{segment}
+        - id: pocket
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/pocket/**
+          filters:
+            - RewritePath=/api/pocket/(?<segment>.*), /$\{segment}

@@ -12,6 +12,7 @@
         <module>hd-service</module>
         <module>full-hd-service</module>
         <module>pocket</module>
+        <module>gateway</module>
     </modules>
 
 </project>
