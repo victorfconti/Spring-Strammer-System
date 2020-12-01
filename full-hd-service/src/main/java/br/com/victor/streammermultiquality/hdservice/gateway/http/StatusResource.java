@@ -14,4 +14,10 @@ public class StatusResource {
         return "OK";
     }
 
+    @GetMapping("/health")
+    @ResponseStatus(HttpStatus.OK)
+    public String health(){
+        return "OK";
+    }
+
 }
